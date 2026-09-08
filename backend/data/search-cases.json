@@ -1,0 +1,90 @@
+[
+  {
+    "query": "고구마라떼",
+    "fields": [
+      "name"
+    ],
+    "expected_names": [
+      "고구마라떼"
+    ],
+    "match_rule": "제목 부분 일치"
+  },
+  {
+    "query": "파마산 치즈",
+    "fields": [
+      "ingredients"
+    ],
+    "expected_names": [
+      "토마토파스타",
+      "크림파스타",
+      "버섯리소토"
+    ],
+    "match_rule": "재료 텍스트 부분 일치"
+  },
+  {
+    "query": "불향",
+    "fields": [
+      "recipe"
+    ],
+    "expected_names": [
+      "짬뽕",
+      "중화풍 가지볶음"
+    ],
+    "match_rule": "조리 본문 부분 일치"
+  },
+  {
+    "query": "김치 볶음밥",
+    "fields": [
+      "aliases"
+    ],
+    "expected_names": [
+      "김치볶음밥"
+    ],
+    "match_rule": "별칭과 공백 정규화 정책"
+  },
+  {
+    "query": "스파게티면 홀토마토",
+    "fields": [
+      "ingredients"
+    ],
+    "expected_names": [
+      "토마토파스타"
+    ],
+    "match_rule": "다중 재료 AND 정책"
+  },
+  {
+    "query": "연어 새우",
+    "fields": [
+      "ingredients"
+    ],
+    "expected_names": [
+      "연어초밥",
+      "사케동",
+      "연어스테이크",
+      "짬뽕",
+      "마라샹궈",
+      "새우볶음면"
+    ],
+    "match_rule": "별도 검색 모드의 다중 재료 OR 정책"
+  },
+  {
+    "query": "없는재료",
+    "fields": [
+      "name",
+      "ingredients",
+      "recipe"
+    ],
+    "expected_names": [],
+    "match_rule": "검색 결과 없음"
+  },
+  {
+    "query": "   ",
+    "fields": [
+      "name",
+      "ingredients",
+      "recipe"
+    ],
+    "expected_names": [],
+    "match_rule": "trim 후 빈 검색어는 빈 결과 반환"
+  }
+]

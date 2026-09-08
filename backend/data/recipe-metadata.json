@@ -1,0 +1,1871 @@
+[
+  {
+    "name": "김치볶음밥",
+    "description": "한식의 조리법과 재료 구성을 반영한 김치볶음밥 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 1,
+    "tags": [
+      "한식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "밥",
+      "김치",
+      "대파",
+      "식용유",
+      "참기름",
+      "계란"
+    ],
+    "aliases": [
+      "김치 볶음밥"
+    ],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "참치김치찌개",
+    "description": "한식의 조리법과 재료 구성을 반영한 참치김치찌개 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 3,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "김치",
+      "참치캔",
+      "두부",
+      "대파",
+      "고춧가루",
+      "국간장",
+      "물"
+    ],
+    "aliases": [],
+    "likes": 7,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "된장찌개",
+    "description": "한식의 조리법과 재료 구성을 반영한 된장찌개 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 3,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "된장",
+      "두부",
+      "애호박",
+      "감자",
+      "양파",
+      "대파",
+      "멸치육수"
+    ],
+    "aliases": [],
+    "likes": 14,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "비빔밥",
+    "description": "한식의 조리법과 재료 구성을 반영한 비빔밥 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 5,
+    "cooking_time_minutes": 35,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "밥",
+      "콩나물",
+      "시금치",
+      "당근",
+      "애호박",
+      "계란",
+      "고추장",
+      "참기름"
+    ],
+    "aliases": [],
+    "likes": 21,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "불고기덮밥",
+    "description": "한식의 조리법과 재료 구성을 반영한 불고기덮밥 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 4,
+    "cooking_time_minutes": 30,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "소고기 불고기용",
+      "밥",
+      "양파",
+      "대파",
+      "간장",
+      "설탕",
+      "다진 마늘",
+      "참기름"
+    ],
+    "aliases": [],
+    "likes": 28,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "닭갈비",
+    "description": "한식의 조리법과 재료 구성을 반영한 닭갈비 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 6,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "닭다리살",
+      "양배추",
+      "고구마",
+      "떡볶이떡",
+      "대파",
+      "고추장",
+      "고춧가루",
+      "간장"
+    ],
+    "aliases": [],
+    "likes": 5,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "제육볶음",
+    "description": "한식의 조리법과 재료 구성을 반영한 제육볶음 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 5,
+    "cooking_time_minutes": 35,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "돼지고기 앞다리살",
+      "양파",
+      "대파",
+      "고추장",
+      "고춧가루",
+      "간장",
+      "설탕"
+    ],
+    "aliases": [],
+    "likes": 12,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "순두부찌개",
+    "description": "한식의 조리법과 재료 구성을 반영한 순두부찌개 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 4,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "순두부",
+      "바지락",
+      "계란",
+      "대파",
+      "고춧가루",
+      "국간장",
+      "멸치육수"
+    ],
+    "aliases": [],
+    "likes": 19,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "갈비찜",
+    "description": "한식의 조리법과 재료 구성을 반영한 갈비찜 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 8,
+    "cooking_time_minutes": 120,
+    "servings": 4,
+    "tags": [
+      "한식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "소갈비",
+      "무",
+      "당근",
+      "표고버섯",
+      "간장",
+      "배",
+      "설탕",
+      "다진 마늘"
+    ],
+    "aliases": [],
+    "likes": 26,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "잡채",
+    "description": "한식의 조리법과 재료 구성을 반영한 잡채 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 7,
+    "cooking_time_minutes": 60,
+    "servings": 4,
+    "tags": [
+      "한식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "당면",
+      "소고기",
+      "시금치",
+      "당근",
+      "양파",
+      "표고버섯",
+      "간장",
+      "참기름"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "콩나물국",
+    "description": "한식의 조리법과 재료 구성을 반영한 콩나물국 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "한식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "콩나물",
+      "대파",
+      "다진 마늘",
+      "국간장",
+      "멸치육수"
+    ],
+    "aliases": [],
+    "likes": 10,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "고구마라떼",
+    "description": "한식의 조리법과 재료 구성을 반영한 고구마라떼 레시피입니다.",
+    "category": "KOREAN",
+    "difficulty": 1,
+    "cooking_time_minutes": 10,
+    "servings": 1,
+    "tags": [
+      "한식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "찐 고구마",
+      "우유",
+      "꿀",
+      "시나몬가루"
+    ],
+    "aliases": [
+      "고구마 라떼",
+      "sweet potato latte"
+    ],
+    "likes": 17,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "짜장면",
+    "description": "중식의 조리법과 재료 구성을 반영한 짜장면 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 6,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "중화면",
+      "춘장",
+      "돼지고기",
+      "양파",
+      "애호박",
+      "양배추",
+      "설탕",
+      "전분물"
+    ],
+    "aliases": [],
+    "likes": 24,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "짬뽕",
+    "description": "중식의 조리법과 재료 구성을 반영한 짬뽕 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 8,
+    "cooking_time_minutes": 50,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "중화면",
+      "오징어",
+      "새우",
+      "홍합",
+      "배추",
+      "양파",
+      "고춧가루",
+      "닭육수"
+    ],
+    "aliases": [],
+    "likes": 1,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "마파두부",
+    "description": "중식의 조리법과 재료 구성을 반영한 마파두부 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 5,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "두부",
+      "다진 돼지고기",
+      "두반장",
+      "대파",
+      "다진 마늘",
+      "간장",
+      "전분물",
+      "화자오"
+    ],
+    "aliases": [],
+    "likes": 8,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "탕수육",
+    "description": "중식의 조리법과 재료 구성을 반영한 탕수육 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 8,
+    "cooking_time_minutes": 55,
+    "servings": 3,
+    "tags": [
+      "중식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "돼지고기 등심",
+      "감자전분",
+      "달걀흰자",
+      "오이",
+      "당근",
+      "식초",
+      "설탕",
+      "간장"
+    ],
+    "aliases": [],
+    "likes": 15,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "계란볶음밥",
+    "description": "중식의 조리법과 재료 구성을 반영한 계란볶음밥 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 2,
+    "cooking_time_minutes": 12,
+    "servings": 1,
+    "tags": [
+      "중식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "밥",
+      "계란",
+      "대파",
+      "식용유",
+      "소금"
+    ],
+    "aliases": [],
+    "likes": 22,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "유린기",
+    "description": "중식의 조리법과 재료 구성을 반영한 유린기 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 7,
+    "cooking_time_minutes": 45,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "닭다리살",
+      "감자전분",
+      "양상추",
+      "대파",
+      "청양고추",
+      "간장",
+      "식초",
+      "설탕"
+    ],
+    "aliases": [],
+    "likes": 29,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "고추잡채",
+    "description": "중식의 조리법과 재료 구성을 반영한 고추잡채 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 6,
+    "cooking_time_minutes": 30,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "돼지고기",
+      "청피망",
+      "홍피망",
+      "양파",
+      "굴소스",
+      "간장",
+      "다진 마늘",
+      "꽃빵"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "토마토계란볶음",
+    "description": "중식의 조리법과 재료 구성을 반영한 토마토계란볶음 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "토마토",
+      "계란",
+      "대파",
+      "설탕",
+      "소금",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 13,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "마라샹궈",
+    "description": "중식의 조리법과 재료 구성을 반영한 마라샹궈 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 7,
+    "cooking_time_minutes": 45,
+    "servings": 3,
+    "tags": [
+      "중식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "마라소스",
+      "청경채",
+      "연근",
+      "새우",
+      "푸주",
+      "목이버섯",
+      "대파",
+      "다진 마늘"
+    ],
+    "aliases": [],
+    "likes": 20,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "중화풍 가지볶음",
+    "description": "중식의 조리법과 재료 구성을 반영한 중화풍 가지볶음 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 5,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "가지",
+      "다진 돼지고기",
+      "대파",
+      "두반장",
+      "간장",
+      "식초",
+      "다진 마늘"
+    ],
+    "aliases": [
+      "중화풍 가지볶음"
+    ],
+    "likes": 27,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "새우볶음면",
+    "description": "중식의 조리법과 재료 구성을 반영한 새우볶음면 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 5,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "중화면",
+      "새우",
+      "숙주",
+      "부추",
+      "굴소스",
+      "간장",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 4,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "옥수수스프",
+    "description": "중식의 조리법과 재료 구성을 반영한 옥수수스프 레시피입니다.",
+    "category": "CHINESE",
+    "difficulty": 3,
+    "cooking_time_minutes": 18,
+    "servings": 2,
+    "tags": [
+      "중식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "크림 옥수수 통조림",
+      "계란",
+      "닭육수",
+      "전분물",
+      "소금",
+      "참기름"
+    ],
+    "aliases": [],
+    "likes": 11,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "연어초밥",
+    "description": "일식의 조리법과 재료 구성을 반영한 연어초밥 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 6,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "생연어",
+      "밥",
+      "식초",
+      "설탕",
+      "소금",
+      "와사비"
+    ],
+    "aliases": [
+      "연어 초밥",
+      "salmon sushi"
+    ],
+    "likes": 18,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "규동",
+    "description": "일식의 조리법과 재료 구성을 반영한 규동 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 3,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "소고기 불고기용",
+      "밥",
+      "양파",
+      "간장",
+      "맛술",
+      "설탕",
+      "다시마육수",
+      "계란 노른자"
+    ],
+    "aliases": [],
+    "likes": 25,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "오니기리",
+    "description": "일식의 조리법과 재료 구성을 반영한 오니기리 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "밥",
+      "소금",
+      "구운 김",
+      "참치마요"
+    ],
+    "aliases": [],
+    "likes": 2,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "돈카츠",
+    "description": "일식의 조리법과 재료 구성을 반영한 돈카츠 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 7,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "돼지고기 등심",
+      "밀가루",
+      "계란",
+      "빵가루",
+      "소금",
+      "후추",
+      "식용유",
+      "돈카츠소스"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "미소된장국",
+    "description": "일식의 조리법과 재료 구성을 반영한 미소된장국 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "미소된장",
+      "연두부",
+      "불린 미역",
+      "대파",
+      "다시마육수"
+    ],
+    "aliases": [
+      "미소 된장국",
+      "미소시루"
+    ],
+    "likes": 16,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "가라아게",
+    "description": "일식의 조리법과 재료 구성을 반영한 가라아게 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 6,
+    "cooking_time_minutes": 35,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "닭다리살",
+      "간장",
+      "맛술",
+      "다진 생강",
+      "다진 마늘",
+      "감자전분",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 23,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "오코노미야키",
+    "description": "일식의 조리법과 재료 구성을 반영한 오코노미야키 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 5,
+    "cooking_time_minutes": 30,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "양배추",
+      "부침가루",
+      "계란",
+      "물",
+      "삼겹살",
+      "오코노미야키소스",
+      "마요네즈",
+      "가쓰오부시"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "야키소바",
+    "description": "일식의 조리법과 재료 구성을 반영한 야키소바 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 4,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "야키소바면",
+      "돼지고기",
+      "양배추",
+      "숙주",
+      "당근",
+      "야키소바소스",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 7,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "스키야키",
+    "description": "일식의 조리법과 재료 구성을 반영한 스키야키 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 7,
+    "cooking_time_minutes": 45,
+    "servings": 3,
+    "tags": [
+      "일식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "소고기 샤브샤브용",
+      "배추",
+      "대파",
+      "표고버섯",
+      "두부",
+      "실곤약",
+      "간장",
+      "설탕"
+    ],
+    "aliases": [],
+    "likes": 14,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "사케동",
+    "description": "일식의 조리법과 재료 구성을 반영한 사케동 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 3,
+    "cooking_time_minutes": 15,
+    "servings": 1,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "생연어",
+      "밥",
+      "간장",
+      "맛술",
+      "양파",
+      "무순",
+      "와사비"
+    ],
+    "aliases": [],
+    "likes": 21,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "우동",
+    "description": "일식의 조리법과 재료 구성을 반영한 우동 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 3,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "우동면",
+      "가쓰오부시육수",
+      "간장",
+      "맛술",
+      "유부",
+      "대파",
+      "어묵"
+    ],
+    "aliases": [],
+    "likes": 28,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "카라이 라멘",
+    "description": "일식의 조리법과 재료 구성을 반영한 카라이 라멘 레시피입니다.",
+    "category": "JAPANESE",
+    "difficulty": 8,
+    "cooking_time_minutes": 60,
+    "servings": 2,
+    "tags": [
+      "일식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "라멘면",
+      "돼지사골육수",
+      "차슈",
+      "숙주",
+      "달걀",
+      "고추기름",
+      "된장",
+      "대파"
+    ],
+    "aliases": [],
+    "likes": 5,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "토마토파스타",
+    "description": "양식의 조리법과 재료 구성을 반영한 토마토파스타 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 4,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "스파게티면",
+      "홀토마토",
+      "마늘",
+      "양파",
+      "올리브유",
+      "파마산 치즈",
+      "소금"
+    ],
+    "aliases": [
+      "토마토 파스타",
+      "pomodoro pasta"
+    ],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "크림파스타",
+    "description": "양식의 조리법과 재료 구성을 반영한 크림파스타 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 5,
+    "cooking_time_minutes": 30,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "페투치네면",
+      "생크림",
+      "베이컨",
+      "양파",
+      "마늘",
+      "파마산 치즈",
+      "버터",
+      "후추"
+    ],
+    "aliases": [
+      "크림 파스타"
+    ],
+    "likes": 19,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "치킨스테이크",
+    "description": "양식의 조리법과 재료 구성을 반영한 치킨스테이크 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 5,
+    "cooking_time_minutes": 35,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "닭다리살",
+      "소금",
+      "후추",
+      "올리브유",
+      "마늘",
+      "로즈마리",
+      "버터"
+    ],
+    "aliases": [],
+    "likes": 26,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "버섯리소토",
+    "description": "양식의 조리법과 재료 구성을 반영한 버섯리소토 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 7,
+    "cooking_time_minutes": 45,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "아르보리오 쌀",
+      "양송이버섯",
+      "양파",
+      "화이트와인",
+      "치킨스톡",
+      "버터",
+      "파마산 치즈"
+    ],
+    "aliases": [],
+    "likes": 3,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "감자수프",
+    "description": "양식의 조리법과 재료 구성을 반영한 감자수프 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 4,
+    "cooking_time_minutes": 30,
+    "servings": 3,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "감자",
+      "양파",
+      "대파 흰 부분",
+      "버터",
+      "우유",
+      "치킨스톡",
+      "소금"
+    ],
+    "aliases": [],
+    "likes": 10,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "시저샐러드",
+    "description": "양식의 조리법과 재료 구성을 반영한 시저샐러드 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 3,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "로메인 상추",
+      "크루통",
+      "파마산 치즈",
+      "마요네즈",
+      "앤초비",
+      "레몬즙",
+      "다진 마늘"
+    ],
+    "aliases": [],
+    "likes": 17,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "라자냐",
+    "description": "양식의 조리법과 재료 구성을 반영한 라자냐 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 9,
+    "cooking_time_minutes": 90,
+    "servings": 4,
+    "tags": [
+      "양식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "라자냐면",
+      "다진 소고기",
+      "홀토마토",
+      "양파",
+      "리코타 치즈",
+      "모짜렐라 치즈",
+      "파마산 치즈",
+      "올리브유"
+    ],
+    "aliases": [],
+    "likes": 24,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "햄버거스테이크",
+    "description": "양식의 조리법과 재료 구성을 반영한 햄버거스테이크 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 6,
+    "cooking_time_minutes": 45,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "다진 소고기",
+      "다진 돼지고기",
+      "양파",
+      "빵가루",
+      "우유",
+      "계란",
+      "케첩",
+      "우스터소스"
+    ],
+    "aliases": [],
+    "likes": 1,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "연어스테이크",
+    "description": "양식의 조리법과 재료 구성을 반영한 연어스테이크 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 5,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "연어 필렛",
+      "소금",
+      "후추",
+      "올리브유",
+      "버터",
+      "레몬",
+      "딜"
+    ],
+    "aliases": [],
+    "likes": 8,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "바질페스토파스타",
+    "description": "양식의 조리법과 재료 구성을 반영한 바질페스토파스타 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 4,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "양식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "스파게티면",
+      "바질페스토",
+      "방울토마토",
+      "잣",
+      "파마산 치즈",
+      "소금"
+    ],
+    "aliases": [
+      "바질 페스토 파스타"
+    ],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "프렌치토스트",
+    "description": "양식의 조리법과 재료 구성을 반영한 프렌치토스트 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 1,
+    "tags": [
+      "양식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "식빵",
+      "계란",
+      "우유",
+      "설탕",
+      "버터",
+      "메이플시럽"
+    ],
+    "aliases": [],
+    "likes": 22,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "클램차우더",
+    "description": "양식의 조리법과 재료 구성을 반영한 클램차우더 레시피입니다.",
+    "category": "WESTERN",
+    "difficulty": 6,
+    "cooking_time_minutes": 40,
+    "servings": 3,
+    "tags": [
+      "양식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "바지락",
+      "감자",
+      "양파",
+      "셀러리",
+      "베이컨",
+      "우유",
+      "버터",
+      "밀가루"
+    ],
+    "aliases": [],
+    "likes": 29,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "버터쿠키",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 버터쿠키 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 3,
+    "cooking_time_minutes": 45,
+    "servings": 6,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "박력분",
+      "무염버터",
+      "설탕",
+      "계란 노른자",
+      "소금"
+    ],
+    "aliases": [],
+    "likes": 6,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "초코칩머핀",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 초코칩머핀 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 4,
+    "cooking_time_minutes": 40,
+    "servings": 6,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "박력분",
+      "무염버터",
+      "설탕",
+      "계란",
+      "우유",
+      "베이킹파우더",
+      "초코칩"
+    ],
+    "aliases": [],
+    "likes": 13,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "바나나브레드",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 바나나브레드 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 4,
+    "cooking_time_minutes": 65,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "잘 익은 바나나",
+      "중력분",
+      "설탕",
+      "계란",
+      "식용유",
+      "베이킹소다",
+      "소금",
+      "호두"
+    ],
+    "aliases": [],
+    "likes": 20,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "치즈케이크",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 치즈케이크 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 8,
+    "cooking_time_minutes": 120,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "크림치즈",
+      "설탕",
+      "계란",
+      "생크림",
+      "레몬즙",
+      "박력분",
+      "다이제 비스킷",
+      "버터"
+    ],
+    "aliases": [],
+    "likes": 27,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "스콘",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 스콘 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 5,
+    "cooking_time_minutes": 40,
+    "servings": 6,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "중력분",
+      "베이킹파우더",
+      "설탕",
+      "소금",
+      "차가운 버터",
+      "우유"
+    ],
+    "aliases": [],
+    "likes": 4,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "식빵",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 식빵 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 10,
+    "cooking_time_minutes": 180,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "강력분",
+      "우유",
+      "설탕",
+      "소금",
+      "인스턴트 드라이이스트",
+      "무염버터"
+    ],
+    "aliases": [],
+    "likes": 11,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "마들렌",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 마들렌 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 5,
+    "cooking_time_minutes": 50,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "박력분",
+      "설탕",
+      "계란",
+      "무염버터",
+      "베이킹파우더",
+      "레몬 제스트"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "브라우니",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 브라우니 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 4,
+    "cooking_time_minutes": 45,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "다크초콜릿",
+      "무염버터",
+      "설탕",
+      "계란",
+      "중력분",
+      "코코아가루",
+      "소금"
+    ],
+    "aliases": [],
+    "likes": 25,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "에그타르트",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 에그타르트 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 8,
+    "cooking_time_minutes": 80,
+    "servings": 6,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "냉동 퍼프 페이스트리",
+      "계란 노른자",
+      "우유",
+      "생크림",
+      "설탕",
+      "바닐라 익스트랙"
+    ],
+    "aliases": [],
+    "likes": 2,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "레몬파운드케이크",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 레몬파운드케이크 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 6,
+    "cooking_time_minutes": 75,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "박력분",
+      "무염버터",
+      "설탕",
+      "계란",
+      "레몬",
+      "베이킹파우더",
+      "슈가파우더"
+    ],
+    "aliases": [],
+    "likes": 9,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "호두파이",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 호두파이 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 8,
+    "cooking_time_minutes": 90,
+    "servings": 8,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "박력분",
+      "무염버터",
+      "찬물",
+      "호두",
+      "계란",
+      "갈색설탕",
+      "물엿",
+      "시나몬가루"
+    ],
+    "aliases": [],
+    "likes": 16,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "단호박머핀",
+    "description": "베이킹의 조리법과 재료 구성을 반영한 단호박머핀 레시피입니다.",
+    "category": "BAKING",
+    "difficulty": 4,
+    "cooking_time_minutes": 45,
+    "servings": 6,
+    "tags": [
+      "베이킹",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "찐 단호박",
+      "박력분",
+      "설탕",
+      "계란",
+      "우유",
+      "식용유",
+      "베이킹파우더"
+    ],
+    "aliases": [],
+    "likes": 23,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "떡볶이",
+    "description": "간식의 조리법과 재료 구성을 반영한 떡볶이 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 3,
+    "cooking_time_minutes": 25,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "떡볶이떡",
+      "어묵",
+      "대파",
+      "고추장",
+      "고춧가루",
+      "설탕",
+      "멸치육수"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "치즈핫도그",
+    "description": "간식의 조리법과 재료 구성을 반영한 치즈핫도그 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 7,
+    "cooking_time_minutes": 50,
+    "servings": 4,
+    "tags": [
+      "간식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "핫도그용 소시지",
+      "모짜렐라 치즈",
+      "강력분",
+      "우유",
+      "설탕",
+      "드라이이스트",
+      "빵가루",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 7,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "감자튀김",
+    "description": "간식의 조리법과 재료 구성을 반영한 감자튀김 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 4,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "감자",
+      "식용유",
+      "소금"
+    ],
+    "aliases": [],
+    "likes": 14,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "김밥",
+    "description": "간식의 조리법과 재료 구성을 반영한 김밥 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 7,
+    "cooking_time_minutes": 50,
+    "servings": 3,
+    "tags": [
+      "간식",
+      "집밥",
+      "도전요리"
+    ],
+    "ingredient_names": [
+      "밥",
+      "김밥김",
+      "단무지",
+      "시금치",
+      "당근",
+      "계란",
+      "맛살",
+      "참기름"
+    ],
+    "aliases": [],
+    "likes": 0,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "핫케이크",
+    "description": "간식의 조리법과 재료 구성을 반영한 핫케이크 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 2,
+    "cooking_time_minutes": 20,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "핫케이크가루",
+      "계란",
+      "우유",
+      "버터",
+      "메이플시럽"
+    ],
+    "aliases": [],
+    "likes": 28,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "군고구마",
+    "description": "간식의 조리법과 재료 구성을 반영한 군고구마 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 1,
+    "cooking_time_minutes": 50,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "고구마"
+    ],
+    "aliases": [],
+    "likes": 5,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "팝콘",
+    "description": "간식의 조리법과 재료 구성을 반영한 팝콘 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 1,
+    "cooking_time_minutes": 8,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "팝콘용 옥수수",
+      "식용유"
+    ],
+    "aliases": [],
+    "likes": 12,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "닭꼬치",
+    "description": "간식의 조리법과 재료 구성을 반영한 닭꼬치 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 6,
+    "cooking_time_minutes": 40,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "닭다리살",
+      "대파",
+      "간장",
+      "맛술",
+      "설탕",
+      "물엿",
+      "다진 생강"
+    ],
+    "aliases": [],
+    "likes": 19,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "과일요거트",
+    "description": "간식의 조리법과 재료 구성을 반영한 과일요거트 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 1,
+    "cooking_time_minutes": 8,
+    "servings": 1,
+    "tags": [
+      "간식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "플레인 요거트",
+      "딸기",
+      "바나나",
+      "블루베리",
+      "꿀"
+    ],
+    "aliases": [],
+    "likes": 26,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "고구마맛탕",
+    "description": "간식의 조리법과 재료 구성을 반영한 고구마맛탕 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 5,
+    "cooking_time_minutes": 30,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "집밥",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "고구마",
+      "식용유",
+      "설탕",
+      "물엿",
+      "검은깨"
+    ],
+    "aliases": [],
+    "likes": 3,
+    "created_at": "2026-08-01T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "콘치즈",
+    "description": "간식의 조리법과 재료 구성을 반영한 콘치즈 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 2,
+    "cooking_time_minutes": 15,
+    "servings": 2,
+    "tags": [
+      "간식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "옥수수 통조림",
+      "모짜렐라 치즈",
+      "마요네즈",
+      "설탕",
+      "버터"
+    ],
+    "aliases": [],
+    "likes": 10,
+    "created_at": "2026-08-15T09:00:00Z",
+    "image_url": null
+  },
+  {
+    "name": "인절미토스트",
+    "description": "간식의 조리법과 재료 구성을 반영한 인절미토스트 레시피입니다.",
+    "category": "SNACK",
+    "difficulty": 3,
+    "cooking_time_minutes": 15,
+    "servings": 1,
+    "tags": [
+      "간식",
+      "빠른요리",
+      "일상요리"
+    ],
+    "ingredient_names": [
+      "식빵",
+      "인절미",
+      "버터",
+      "콩가루",
+      "꿀"
+    ],
+    "aliases": [],
+    "likes": 17,
+    "created_at": "2026-09-01T09:00:00Z",
+    "image_url": null
+  }
+]
