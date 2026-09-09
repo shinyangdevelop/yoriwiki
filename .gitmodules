@@ -1,4 +1,4 @@
 [submodule "frontend"]
 	path = frontend
-	url = https://github.com/shinyangdevelop/yoriwiki-frontend.git
+	url = git@github.com:easternY-parh0/yori-wiki2.git
 	branch = main
