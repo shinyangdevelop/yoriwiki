@@ -62,6 +62,7 @@ frontend만 별도로 실행할 때는 `frontend/.env.example`을 `.env`로 복�
 | `PORT` | `8080` | Express 포트. 통합 실행기의 기본 BACKEND_URL에도 반영 |
 | `FRONTEND_PORT` | `5173` | 통합 실행기의 Vite 포트. 단독 Vite 실행은 CLI `--port` 사용 |
 | `BACKEND_URL` | 통합 실행: `http://127.0.0.1:${PORT}` / 단독 프런트엔드: `http://127.0.0.1:8080` | SvelteKit 서버에서 접근할 Express 주소 |
+| `PUBLIC_ORIGIN` | 미설정(요청 URL의 출처) | HTTPS 프록시 뒤에서 인증 요청을 허용할 외부 출처. 예: `https://project.example.com`. BASE_PATH 제외 |
 | `BASE_PATH` | 빈 문자열 | 프런트엔드 공개 경로 접두사. 빌드·실행 환경에서 설정 |
 | `ALLOWED_HOSTS` | 미설정(Vite 기본 허용 목록) | 허용할 호스트 이름을 쉼표로 구분. 공백과 빈 항목 제거 |
 | `NODE_ENV` | 통합 실행기·Express는 설정하지 않음. Vite dev는 미설정 시 `development`, build는 `production` | Express는 정확히 `production`일 때 Secure 세션 쿠키 사용 |
@@ -114,6 +115,13 @@ npm start
 접두사를 반영하지만 페이지 자체가 새로 구현되지는 않습니다.
 
 ## nginx 예시
+
+HTTPS를 nginx에서 종료하고 내부 HTTP Vite로 전달한다면 `PUBLIC_ORIGIN=https://project.example.com`을
+실행 환경에 설정하세요. `X-Forwarded-Proto` 헤더만으로 Vite가 인식하는 요청 출처가 바뀌지는 않습니다.
+Origin에는 `/yoriwiki` 같은 경로를 넣지 않습니다. 끝의 `/`는 허용하고 기본 포트·호스트 표기는 URL 기준으로 정규화합니다.
+다른 출처·Origin 누락·`null`은 계속 403으로 거부하며, 전달 헤더를 조작해 허용 출처를 바꿀 수 없습니다.
+`PUBLIC_ORIGIN`은 공개 변수이므로 SvelteKit의 `$env/dynamic/public`에서 읽습니다.
+`$env/dynamic/private`에서는 `PUBLIC_` 접두사 변수가 제외됩니다.
 
 다음은 접두사가 `/yoriwiki`인 **개발 서버 프록시 예시**입니다. 호스트·경로·포트를 실제 환경으로 바꾸세요.
 기존 HTTPS server 블록에 location을 적용하고 인증서 설정은 해당 서버의 설정을 사용하세요.
@@ -198,6 +206,7 @@ FRONTEND_PORT=5173
 BACKEND_URL=http://127.0.0.1:3000
 BASE_PATH=/yoriwiki
 ALLOWED_HOSTS=project.example.com
+PUBLIC_ORIGIN=https://project.example.com
 NODE_ENV=production
 DATABASE_PATH=/path/to/yoriwiki/backend/database.db
 ```
@@ -216,7 +225,9 @@ BASE_PATH=/yoriwiki npm run check
 BASE_PATH=/yoriwiki npm run build
 BASE_PATH=/yoriwiki npm run test:auth
 BASE_PATH=/projects/yori npm run test:auth
+BASE_PATH=/yoriwiki PUBLIC_ORIGIN=https://project.example.com npm run test:auth
 node --test frontend/tests/config.test.mjs
+node --experimental-strip-types --test frontend/tests/request-origin.test.mjs
 npm run test:explore
 npm run test:search
 ```

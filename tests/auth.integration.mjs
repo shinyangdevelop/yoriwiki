@@ -5,11 +5,14 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const origin = 'http://127.0.0.1:15173';
+// HTTP is the proxy-to-Vite transport; the browser can have an HTTPS origin.
+const browserOrigin = process.env.PUBLIC_ORIGIN ? new URL(process.env.PUBLIC_ORIGIN).origin : origin;
 const prefix = (process.env.BASE_PATH || '').replace(/\/+$/, '');
 const base = origin + prefix;
 const env = { ...process.env, BASE_PATH: prefix, NODE_ENV: 'development', PORT: '18080', DATABASE_PATH: ':memory:', BACKEND_URL: 'http://127.0.0.1:18080' };
 const children = [];
-async function request(path, body, cookie = '', requestOrigin = origin, method) {
+let serverOutput = '';
+async function request(path, body, cookie = '', requestOrigin = browserOrigin, method) {
   return fetch(`${base}/api/auth/${path}`, {
     method: method || (body === undefined ? 'GET' : 'POST'),
     headers: { 'content-type': 'application/json', origin: requestOrigin, cookie },
@@ -26,14 +29,33 @@ try {
   for (const [cwd, args] of [
     ['backend', ['src/index.js']],
     ['frontend', ['node_modules/vite/bin/vite.js', '--host', '127.0.0.1', '--port', '15173', '--strictPort']]
-  ]) children.push(spawn(process.execPath, args, { cwd: `${root}/${cwd}`, env, stdio: 'ignore' }));
+  ]) {
+    const child = spawn(process.execPath, args, { cwd: `${root}/${cwd}`, env, stdio: ['ignore', 'pipe', 'pipe'] });
+    child.stdout.on('data', chunk => { serverOutput = (serverOutput + chunk).slice(-12000); });
+    child.stderr.on('data', chunk => { serverOutput = (serverOutput + chunk).slice(-12000); });
+    child.on('error', error => { serverOutput += error.message; });
+    children.push(child);
+  }
   let ready = false;
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < 240; i++) {
     try { ready = (await fetch(`${base}/api/test`)).ok; } catch {}
     if (ready) break;
     await delay(250);
   }
-  assert.ok(ready, 'Servers did not start');
+  assert.ok(ready, `Servers did not start:\n${serverOutput}`);
+  for (const rejectedOrigin of ['', 'null', 'https://other.example']) {
+    const response = await fetch(`${base}/api/auth/login`, {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        ...(rejectedOrigin ? { origin: rejectedOrigin } : {}),
+        'x-forwarded-host': 'other.example',
+        'x-forwarded-proto': 'https'
+      },
+      body: '{}'
+    });
+    assert.equal(response.status, 403, 'Missing/foreign origins and forged forwarding headers must be rejected');
+  }
   for (const path of ['', '/login', '/signup', '/recipes', '/search', '/profile', '/recipes/new', '/community/write']) {
     const response = await fetch(base + path);
     assert.equal(response.status, 200, path || '/');
@@ -84,11 +106,11 @@ try {
   assert.ok(searchHtml.includes(`href="${prefix}/recipes/${recipeId}"`), 'Search must render a base-aware dynamic recipe URL');
   assert.ok(searchHtml.includes(`action="${prefix}/search"`), 'Search preserves its public pathname');
   assert.equal((await request('cooked')).status, 401);
-  assert.equal((await request('cooked', { recipeId, cooked: true }, '', origin, 'PUT')).status, 401);
+  assert.equal((await request('cooked', { recipeId, cooked: true }, '', browserOrigin, 'PUT')).status, 401);
   assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, 'https://other.example', 'PUT')).status, 403);
-  assert.equal((await request('cooked', { recipeId, cooked: 'true' }, cookie, origin, 'PUT')).status, 400);
-  assert.equal((await request('cooked', { recipeId: 999999, cooked: true }, cookie, origin, 'PUT')).status, 404);
-  for (let i = 0; i < 2; i++) assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, origin, 'PUT')).status, 200);
+  assert.equal((await request('cooked', { recipeId, cooked: 'true' }, cookie, browserOrigin, 'PUT')).status, 400);
+  assert.equal((await request('cooked', { recipeId: 999999, cooked: true }, cookie, browserOrigin, 'PUT')).status, 404);
+  for (let i = 0; i < 2; i++) assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, browserOrigin, 'PUT')).status, 200);
   assert.deepEqual(await (await request('cooked', undefined, cookie)).json(), { ids: [recipeId] });
   assert.equal((await request('signup', { ...input, email: 'isolated@example.com', nickname: '별도사용자' })).status, 201);
   const secondLogin = await request('login', { email: 'isolated@example.com', password: input.password });
@@ -98,7 +120,7 @@ try {
   const catalog = await (await fetch(`${base}/api/explore`)).json();
   assert.equal(catalog.recipes[0].id, recipeId);
   assert.equal(catalog.recipes[0].metadata.step_count, null);
-  assert.equal((await request('cooked', { recipeId, cooked: false }, cookie, origin, 'PUT')).status, 200);
+  assert.equal((await request('cooked', { recipeId, cooked: false }, cookie, browserOrigin, 'PUT')).status, 200);
   assert.deepEqual(await (await request('cooked', undefined, cookie)).json(), { ids: [] });
   for (const path of ['/search', '/profile']) assert.equal((await fetch(base + path, { headers: { cookie } })).status, 200);
   response = await request('logout', {}, cookie);
