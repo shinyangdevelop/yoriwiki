@@ -4,13 +4,15 @@ import { setTimeout as delay } from 'node:timers/promises';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const base = 'http://127.0.0.1:15173';
-const env = { ...process.env, NODE_ENV: 'development', PORT: '18080', DATABASE_PATH: ':memory:', BACKEND_URL: 'http://127.0.0.1:18080' };
+const origin = 'http://127.0.0.1:15173';
+const prefix = (process.env.BASE_PATH || '').replace(/\/+$/, '');
+const base = origin + prefix;
+const env = { ...process.env, BASE_PATH: prefix, NODE_ENV: 'development', PORT: '18080', DATABASE_PATH: ':memory:', BACKEND_URL: 'http://127.0.0.1:18080' };
 const children = [];
-async function request(path, body, cookie = '', origin = base, method) {
+async function request(path, body, cookie = '', requestOrigin = origin, method) {
   return fetch(`${base}/api/auth/${path}`, {
     method: method || (body === undefined ? 'GET' : 'POST'),
-    headers: { 'content-type': 'application/json', origin, cookie },
+    headers: { 'content-type': 'application/json', origin: requestOrigin, cookie },
     body: body === undefined ? undefined : JSON.stringify(body)
   });
 }
@@ -32,6 +34,21 @@ try {
     await delay(250);
   }
   assert.ok(ready, 'Servers did not start');
+  for (const path of ['', '/login', '/signup', '/recipes', '/search', '/profile', '/recipes/new', '/community/write']) {
+    const response = await fetch(base + path);
+    assert.equal(response.status, 200, path || '/');
+    const html = await response.text();
+    for (const [, target] of html.matchAll(/(?:href|action)="(\/(?!\/)[^"]*)"/g)) {
+      if (prefix) assert.ok(target === prefix || target.startsWith(prefix + '/') || target.startsWith(prefix + '?'), `Unprefixed public link: ${target}`);
+      if (prefix) assert.ok(!target.startsWith(prefix + prefix + '/'), `Double prefix: ${target}`);
+    }
+    assert.ok(html.includes(`href="${prefix}/login"`), 'SSR navigation must include public login path');
+    if (!path) {
+      assert.ok(html.includes(`action="${prefix}/search"`));
+      assert.ok(html.includes(`href="${prefix}/recipes?sort=recent"`));
+    }
+  }
+  if (prefix) assert.notEqual((await fetch(origin + '/api/auth/me', { redirect: 'manual' })).status, 401);
   const input = { email: ' Test@Example.com ', nickname: '검증사용자', password: 'TestPass123', passwordConfirm: 'TestPass123', agreeTerms: true, agreePrivacy: true };
   assert.equal((await request('signup', input, '', 'https://other.example')).status, 403);
   for (const patch of [{ email: 'invalid' }, { nickname: '!' }, { password: 'short' }, { passwordConfirm: 'wrong' }, { agreeTerms: false }, { agreePrivacy: 'true' }]) {
@@ -62,12 +79,16 @@ try {
   const foodResponse = await fetch(`${base}/api/food`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ name: 'integration-fixture', ingredients: '-', recipe: '-', estimated_time: '1분' }) });
   assert.equal(foodResponse.status, 201);
   const recipeId = await foodResponse.json();
+  assert.equal((await fetch(`${base}/recipes/${recipeId}`)).status, 200);
+  const searchHtml = await (await fetch(`${base}/search?q=integration-fixture`)).text();
+  assert.ok(searchHtml.includes(`href="${prefix}/recipes/${recipeId}"`), 'Search must render a base-aware dynamic recipe URL');
+  assert.ok(searchHtml.includes(`action="${prefix}/search"`), 'Search preserves its public pathname');
   assert.equal((await request('cooked')).status, 401);
-  assert.equal((await request('cooked', { recipeId, cooked: true }, '', base, 'PUT')).status, 401);
+  assert.equal((await request('cooked', { recipeId, cooked: true }, '', origin, 'PUT')).status, 401);
   assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, 'https://other.example', 'PUT')).status, 403);
-  assert.equal((await request('cooked', { recipeId, cooked: 'true' }, cookie, base, 'PUT')).status, 400);
-  assert.equal((await request('cooked', { recipeId: 999999, cooked: true }, cookie, base, 'PUT')).status, 404);
-  for (let i = 0; i < 2; i++) assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, base, 'PUT')).status, 200);
+  assert.equal((await request('cooked', { recipeId, cooked: 'true' }, cookie, origin, 'PUT')).status, 400);
+  assert.equal((await request('cooked', { recipeId: 999999, cooked: true }, cookie, origin, 'PUT')).status, 404);
+  for (let i = 0; i < 2; i++) assert.equal((await request('cooked', { recipeId, cooked: true }, cookie, origin, 'PUT')).status, 200);
   assert.deepEqual(await (await request('cooked', undefined, cookie)).json(), { ids: [recipeId] });
   assert.equal((await request('signup', { ...input, email: 'isolated@example.com', nickname: '별도사용자' })).status, 201);
   const secondLogin = await request('login', { email: 'isolated@example.com', password: input.password });
@@ -77,7 +98,7 @@ try {
   const catalog = await (await fetch(`${base}/api/explore`)).json();
   assert.equal(catalog.recipes[0].id, recipeId);
   assert.equal(catalog.recipes[0].metadata.step_count, null);
-  assert.equal((await request('cooked', { recipeId, cooked: false }, cookie, base, 'PUT')).status, 200);
+  assert.equal((await request('cooked', { recipeId, cooked: false }, cookie, origin, 'PUT')).status, 200);
   assert.deepEqual(await (await request('cooked', undefined, cookie)).json(), { ids: [] });
   for (const path of ['/search', '/profile']) assert.equal((await fetch(base + path, { headers: { cookie } })).status, 200);
   response = await request('logout', {}, cookie);
@@ -88,7 +109,7 @@ try {
   assert.equal(response.status, 200);
   assert.ok(!response.headers.get('set-cookie').includes('Max-Age'));
   for (const path of ['/signup', '/login?registered=1']) assert.equal((await fetch(base + path)).status, 200);
-  console.log('PASS: auth, CSRF, cooked persistence/idempotence/removal/account isolation, catalog and exploration page SSR');
+  console.log(`PASS (${prefix || '/'}): public links/forms, dynamic recipes, API proxy, auth, CSRF, cooked persistence, account isolation and SSR`);
 } finally {
   for (const child of children) {
     if (child.exitCode === null) child.kill();
